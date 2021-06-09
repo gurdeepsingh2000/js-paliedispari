@@ -19,11 +19,22 @@ function checkPalindrome(str){
     var value = checkPalindrome(askName);
     
     
+    
     output.innerHTML += msg
 
 
 
     /////////////////////////////////
+
+
+    var even_odd = prompt('Scrivi pari o dispari')
+    var number_request = parseInt(prompt('Inserisci un numero da 1 a 5'))
+    var result = number_request + randomizeNum
+    var output = document.getElementById("second-test");
+    var even = 'pari'
+    var odd = 'dispari'
+
+
 
  
    
@@ -34,20 +45,28 @@ function checkPalindrome(str){
 
     var randomizeNum = generateNumber(1 ,5)
 
-    function checkNum(num) {
-        if (num % 2 === 0) {
+    function typecheck (randomNum) {
+        if (result % 2 === 0) {
             return true;
         } else {
             return false;
         }
     }
 
+ 
 
 
-    var output = document.getElementById("second-test");
-    var even_odd = prompt('Scrivi pari o dispari')
-    var number_request = parseInt(prompt('Inserisci un numero da 1 a 5'))
-    var result = 
+    if (typecheck = true && even_odd === 'pari'){
+        output.innerHTML += 'Complimenti hai vinto'
+    }else if(typecheck = false && even_odd === 'dispari') {
+        output.innerHTML += 'Complimenti hai perso'
+    }else{
+        output.innerHTML += alert('Hai inserito qualcosa di sbagliato')
+    }
+
+
+
+
 
 
  /*
