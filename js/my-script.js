@@ -45,7 +45,7 @@ function checkPalindrome(str){
 
     var randomizeNum = generateNumber(1 ,5)
 
-    function typecheck (randomNum) {
+    function typecheck (result) {
         if (result % 2 === 0) {
             return true;
         } else {
@@ -58,10 +58,8 @@ function checkPalindrome(str){
 
     if (typecheck = true && even_odd === 'pari'){
         output.innerHTML += 'Complimenti hai vinto'
-    }else if(typecheck = false && even_odd === 'dispari') {
+    }else if(typecheck !== true && even_odd === 'dispari') {
         output.innerHTML += 'Complimenti hai perso'
-    }else{
-        output.innerHTML += alert('Hai inserito qualcosa di sbagliato')
     }
 
 
